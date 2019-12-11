@@ -1,10 +1,13 @@
+/* Pagrindinis tėvas konteineris */
 .container{
     display: inline-block;
     width: 100%;
 }
+/* fono spalva višutinei ir apatinei daliai */
 .bg-blue{
     background-color: #03A9F3;
 }
+/* viršutinės dalies pagrindinis langas */
 .hero{
     padding-top: 80px ;
     padding-bottom: 40px;
@@ -18,7 +21,6 @@
         margin-left: calc( ( 100% - 600px ) / 2 );
         margin-right: calc( ( 100% - 600px ) / 2 );
         text-align: center;
-        /* background: yellow; */
     }
     .hero > .row > img {
         display: inline-block;
@@ -32,7 +34,6 @@
         font-size: 60px;
         line-height: 60px;
         text-transform: uppercase;
-        /* background: powderblue; */
     }
     .hero > .row > p {
         display: inline-block;
@@ -41,13 +42,11 @@
         color: #777;
         font-size: 22px;
         line-height: 30px;
-        /* background: plum; */
     }
     .hero > .row > .clock {
         display: inline-block;
         width: 100%;
         margin-bottom: 60px;
-        /* background: pink; */
     }
     .hero > .row > .form {
         display: inline-block;
@@ -55,13 +54,11 @@
         margin-left: 5%;
         margin-right: 5%;
         margin-bottom: 20px;
-        /* background: yellowgreen; */
     }
     .hero > .row > .mouse {
         display: inline-block;
         text-align: center;
         margin-bottom: 10 px;
-        /* background: yellow; */
     }
 .content{
     padding-top: 80px;
@@ -97,15 +94,51 @@
         font-size: 18px;
         line-height: 25px;
     }
-    .content >.row p > a{
-        color: #ae1e63;
+    .content > .row p > a {
+        color: #AE1E63;
         text-decoration: none;
     }
     footer{
-        display: inline-block;
-        
+        padding-bottom: 60px;
+        text-align: center;
     }
-    
-
-
-
+        footer > .row {
+            display: inline-block;
+            width: 1000px;
+            margin-left: calc( ( 100% - 1000px ) / 2 );
+            margin-right: calc( ( 100% - 1000px ) / 2 );
+            /* background-color: yellow; */
+        }
+            footer > .row > .socials {
+                display: inline-block;
+                width: 100%;
+                margin-bottom: 20px;
+                border-bottom: 2px solid #FFF;
+                /* background-color: yellow; */
+            }
+            footer > .row > .footer-content{
+                display: inline-block;
+                width: 600px;
+                color: rgba(255,255,255,0.5);
+            }
+                footer .footer-content > img {
+                    display: inline-block;
+                    margin-bottom: 20px;
+                }
+                footer .text-list {
+                    display: inline-block;
+                    width: 100%;
+                }
+                footer .text-list >  .text {
+                    display: inline-block;
+                    padding: 0 10px;
+                }
+                footer .text-list >  .text:nth-child(2) {
+                    display: inline-block;
+                    border-left: 1px solid #FFF;
+                    border-right:1px solid #FFF;
+                }
+                     footer .footer-content a {
+                        color: #FFF;
+                        text-decoration: none;
+                    }
