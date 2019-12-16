@@ -40,7 +40,7 @@
         .hero > .row > p {
             display: inline-block;
             width: 100%;
-            margin-bottom: 60px;
+            margin-bottom: 50px;
             color: #777;
             font-size: 22px;
             line-height: 30px;
@@ -48,7 +48,7 @@
         .hero > .row > .clock {
             display: inline-block;
             width: 100%;
-            margin-bottom: 60px;
+            margin-bottom: 50px;
         }
         .hero > .row > .form {
             display: inline-block;
@@ -62,9 +62,15 @@
             text-align: center;
             margin-bottom: 10 px;
         }
-        @media (max-width:640px) {
-            
-            }        
+@media (max-width:640px) {
+    .hero{
+        padding: 8px;
+    }
+    .hero > .row{
+        width: 100%;
+        margin: 0;
+    }
+}        
   /**************************************************/
  /*  CONTENT - vidurinės ekrano dalies formavimas  */
 /**************************************************/
@@ -132,11 +138,12 @@
             margin-bottom: 5px;
         }
     }
-    @media (max-width:640px) {
+@media (max-width:640px) {
+
         .content > .row {
-            display: inline-block;
-            padding: 10px;
             width: 100%;
+            margin: 0;
+            padding: 10px;
             background: yellowgreen
         }
             .content > .row > .left{
@@ -198,7 +205,6 @@ footer{
                     }
         @media (max-width:1100px) {
             footer > .row {
-                display: inline-block;
                 width: 800px;
                 margin: 0 calc( ( 100% - 800px ) / 2 );
                 background: grey;
@@ -206,18 +212,23 @@ footer{
         }
         @media (max-width:900px) {
             footer > .row {
-                display: inline-block;
                 width: 600px;
                 margin: 0 calc((100% - 600px)/2);
                 background: yellowgreen;
             }
         }
-        @media (max-width:600px) {
+        @media (max-width:640px) {
             footer > .row {
-                display: inline-block;
                 width: 100%;
-                margin: 0 calc((100% - width)/2);
-                background: yellowgreen;
+                margin: 0;
+                background: black;
             }
-        }
+            footer > .row > .footer-content {
+                width: 100%;
+                border: none;
+            }
+            footer .text-list >  .text {
+                width: 100%;
+                padding: 10px;
+     }
              
