@@ -1,8 +1,49 @@
-body,
-body * {
-    margin: 0;
-    padding: 0;
-    vertical-align: top;
-    box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.progress-bar{
+    display: inline-block;
+    width: 100%;
+
 }
+    .progress-bar > .texts{
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+            .progress-bar > .texts >.title{
+                display: inline-block;
+                float: left;
+            }
+            .progress-bar > .texts >.value{
+                display: inline-block;
+                float: right;
+            }
+ 
+    .progress-bar > .bar{
+        display: inline-block;
+        width: 100%;
+        height: 10px;
+        background: #ccc;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+        .progress-bar > .bar > .value{
+            display: inline-block;
+            width: 90%;
+            height: 100%;
+            background: #03A9F3;
+        }
+            /* .progress-bar > .bar > .value.value-86{
+                display: inline-block;
+                width: 86%;
+            } */
+    /* selektoriuje parasytos klases be tarpo 
+    privalo buti tame paciame elemente salia vienas kito, 
+    pirma yra pagrindine klase, o antra detalizuojanti */
+            /* .progress-bar > .bar > .value.value-50{
+                display: inline-block;
+                width: 50%;
+            } */
+                 
+
+
