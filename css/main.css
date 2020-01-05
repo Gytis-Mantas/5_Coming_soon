@@ -1,7 +1,7 @@
   /***********************************/
  /*  Pagrindinis tėvas konteineris  */
 /***********************************/
- .container{
+.container{
     display: inline-block;
     width: 100%;
 }
@@ -12,7 +12,7 @@
   /*  Viršutinės ekrano dalies formavimas  */
  /*****************************************/
 .hero{
-    padding: 80px 40px;
+    padding: 40px 40px;
     background-image: url(../img/banner.jpg) ;
     background-size: cover;
     background-position: center center;
@@ -20,35 +20,34 @@
     .hero > .row{
         display: inline-block;
         width: 600px;
-        margin-left: calc( ( 100% - 600px ) / 2 );
-        margin-right: calc( ( 100% - 600px ) / 2 );
+        margin: 0 calc( ( 100% - 600px ) / 2 );
         text-align: center;
     }
         .hero > .row > img {
             display: inline-block;
-            margin-bottom: 60px;
+            margin-bottom: 30px;
         }   
         .hero > .row > h1 {
             display: inline-block;
             width: 100%;
-            margin-bottom: 20px;
+            margin-bottom: 12px;
             color: #000;
-            font-size: 60px;
-            line-height: 60px;
+            font-size: 40px;
+            line-height: 40px;
             text-transform: uppercase;
         }
         .hero > .row > p {
             display: inline-block;
             width: 100%;
-            margin-bottom: 50px;
+            margin-bottom: 0px;
             color: #777;
-            font-size: 22px;
-            line-height: 30px;
+            font-size: 16px;
+            line-height: 20px;
         }
         .hero > .row > .clock {
             display: inline-block;
             width: 100%;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
         }
         .hero > .row > .form {
             display: inline-block;
@@ -75,7 +74,7 @@
  /*  CONTENT - vidurinės ekrano dalies formavimas  */
 /**************************************************/
 .content{
-    padding: 80px 0;
+    padding: 50px 0;
     background: #fff;
 }
     .content > .row {
@@ -96,15 +95,16 @@
         .content > .row h3 {
             display: inline-block;
             width: 100%;
-            margin-bottom: 30px;
+            margin-bottom: 16px;
+            font-size: 18px;
             text-transform: uppercase;
         }
         .content > .row p {
             display: inline-block;
             width: 100%;
             margin-bottom: 30px;
-            font-size: 18px;
-            line-height: 25px;
+            font-size: 16px;
+            line-height: 20px;
         }
         .content > .row p > a {
             text-decoration: none;
