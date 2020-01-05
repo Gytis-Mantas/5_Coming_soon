@@ -39,7 +39,7 @@
                 /* animation-iteration-count: 1; */
                 /* animation-duration: 10s; */
                 border-radius: 5px;
-                animation: loading 2s steps(11) 0s infinite alternate forwards;
+                animation: loading 2s steps(20) 0s infinite alternate forwards;
             }
 
         /* selektoriuje parasytos klases be tarpo 
