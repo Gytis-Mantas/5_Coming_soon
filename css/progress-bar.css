@@ -29,40 +29,41 @@
             display: inline-block;
             width: 90%;
             height: 100%;
-            background: #03A9F3;
-            animation-name: loading;
-            animation-iteration-count: 1;
-            animation-duration: 1s;
         }
-        .progress-bar:nth-of-type(2) > .bar > .value{
-            animation-name: loading-2;
-        }
-        .progress-bar:nth-of-type(3) > .bar > .value{
-            animation-name: loading-3;
-        }
+            .progress-bar > .bar > .value > .loading {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                background: #03A9F3;
+                /* animation-name: loading; */
+                /* animation-iteration-count: 1; */
+                /* animation-duration: 10s; */
+                border-radius: 5px;
+                animation: loading 2s steps(11) 0s infinite alternate forwards;
+            }
+
         /* selektoriuje parasytos klases be tarpo 
         privalo buti tame paciame elemente salia vienas kito, 
         pirma yra pagrindine klase, o antra detalizuojanti */
 @keyframes loading{
     0% {
         width: 0%;
+        height: 0%;
+        border-radius: 0;
+        background-color: #000;
+    }
+    20% {
+        background-color: blue;
+    }
+    50%{
+        background-color: yellow;
     }
     100% {
-        width: 90%;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #03A9F3;
     }
 }
-@keyframes loading-2{
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 86%;
-    }
-}@keyframes loading-3{
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 50%;
-    }
-}
+ /* po animacijos galutinis vaizdas lieka toks, kaip aprasyta sekcijoje */
+/*           .progress-bar > .bar > .value > .loading {                */
